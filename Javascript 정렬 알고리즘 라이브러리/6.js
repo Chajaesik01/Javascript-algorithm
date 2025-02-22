@@ -8,7 +8,7 @@ let n = Number(input[0]);
 let result = input[1].split(' ').map(Number);
 
 let items = result.map((value, index) => ({ value, index }));
-
+console.log(items);
 items.sort((a, b) => a.value - b.value);
 
 let count = new Array(n).fill(0);
