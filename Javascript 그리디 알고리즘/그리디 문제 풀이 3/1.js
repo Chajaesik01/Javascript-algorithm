@@ -1,8 +1,8 @@
-let fs = require('fs');
-let input = fs.readFileSync('/dev/stdin').toString().split('\n');
-
 //let fs = require('fs');
-//let input = fs.readFileSync('example.txt').toString().split('\n');
+//let input = fs.readFileSync('/dev/stdin').toString().split('\n');
+
+let fs = require('fs');
+let input = fs.readFileSync('example.txt').toString().split('\n');
 
 let n = Number(input[0]);
 let pairs = []
@@ -18,6 +18,7 @@ for(let i = 1; i <= n; i++){
     pairs.push([start, end]);
 }
 pairs.sort(compare);
+console.log(pairs);
 
 let endTime = 0;  
 
