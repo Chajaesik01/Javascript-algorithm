@@ -1,8 +1,8 @@
-let fs = require('fs');
-let input = fs.readFileSync('/dev/stdin').toString().split('\n');
-
 //let fs = require('fs');
-//let input = fs.readFileSync('example.txt').toString().split('\n');
+//let input = fs.readFileSync('/dev/stdin').toString().split('\n');
+
+let fs = require('fs');
+let input = fs.readFileSync('example.txt').toString().split('\n');
 
 let [t, k] = input[0].split(' ').map(Number);
 
